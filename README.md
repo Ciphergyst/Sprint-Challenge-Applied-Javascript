@@ -42,7 +42,7 @@ An event listener is simply a method on an element that listens for a specific e
 
 4. Why would we convert a NodeList into an Array?
 
-A Node list is classified a Array-like, but does not have all of the apabilities that a traditonal array has. So in order for the data to be manipulated the way an Array is, it would need to be converted in order for many of the Array capabilities like .map or .sort to be available
+A Node list is classified a Array-like, but does not have all of the capabilities that a traditonal array has. So in order for the data to be manipulated the way an Array is, it would need to be converted in order for many of the Array capabilities like .map or .sort to be available
 
 5. What is a component?
 
