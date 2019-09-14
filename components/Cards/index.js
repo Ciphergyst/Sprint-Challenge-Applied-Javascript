@@ -108,7 +108,6 @@
 // }
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles').then( (response) => {
-    // console.log(response);
      Object.values(response.data.articles).forEach( (item) => {
         item.forEach((item) => {
             const cards = document.querySelector('.cards-container');
