@@ -128,7 +128,7 @@ function cardCreator(axiosData){
     divCard.classList.add('card');
     divHeader.classList.add('headline');
     divAuthor.classList.add('author');
-    divImgContainer('img-container');
+    divImgContainer.classList.add('img-container');
 
     divHeader.textContent = axiosData.headline;
     newImg.src = axiosData.authorPhoto;
@@ -140,7 +140,7 @@ function cardCreator(axiosData){
     divHeader.appendChild(divAuthor);
     divCard.appendChild(divHeader);
 
- return divCard;
+return divCard;
 
 
 }
