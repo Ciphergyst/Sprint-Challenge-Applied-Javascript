@@ -107,16 +107,15 @@
 // }
 // }
 
-axios.get('https://lambda-times-backend.herokuapp.com/articles')
-.then((response) => {
-    console.log(response);
-    Object.data(response.data.article).forEach((item) => {
+axios.get('https://lambda-times-backend.herokuapp.com/articles').then( (response) => {
+    // console.log(response);
+     Object.values(response.data.articles).forEach( (item) => {
         item.forEach((item) => {
             const cards = document.querySelector('.cards-container');
             cards.appendChild(cardCreator(item));
-        })
-    })
-})
+        });
+    });
+});
 
 function cardCreator(axiosData){
     const divCard = document.createElement('div');
@@ -141,7 +140,7 @@ function cardCreator(axiosData){
     divHeader.appendChild(divAuthor);
     divCard.appendChild(divHeader);
 
-return divCard;
+ return divCard;
 
 
 }

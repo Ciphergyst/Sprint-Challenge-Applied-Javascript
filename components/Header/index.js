@@ -10,6 +10,8 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
+document.querySelector(".header-container").appendChild(Header());
+
 function Header() {
     const newHeaderdiv = document.createElement('div');
     const newSpanDate = document.createElement('span');
