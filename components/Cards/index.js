@@ -1,4 +1,5 @@
 // STEP 3: Create Article cards.
+/*jshint esversion: 6 */
 // -----------------------
 // Send an HTTP GET request to the following address: https://lambda-times-backend.herokuapp.com/articles
 // Stduy the response data you get back, closely.
